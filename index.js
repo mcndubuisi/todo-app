@@ -10,9 +10,9 @@ app.use(bodyParser.urlencoded({
 app.set("view engine", "ejs");
 
 
-var task = ["buy socks", "practise with nodejs"];
+var task = ["Send Email to Mark", "Discuss Performance with Manager"];
 
-var complete = ["completed task"];
+var complete = ["Completed Task"];
 
 
 app.post("/addtask", function (req, res) {
