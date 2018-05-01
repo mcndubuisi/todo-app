@@ -45,6 +45,7 @@ app.get("/", function (req, res) {
 	});
 });
 
-app.listen(3000, function () {
-	console.log("server is running on port 3000");
+app.listen(app.get('port'), function () {
+	console.log('Express started on http://localhost:' +
+        app.get('port') + '; press Ctrl-C to terminate.');
 });
